@@ -1,37 +1,43 @@
 # blog
 
-#### 介绍
-本仓库的文档用于发博客
+## 前言
 
-#### 软件架构
-软件架构说明
+本仓库存放用于发表博客的文档
+
+## git commit的提交规范
+
+1.  增加新的内容遵循如下格式
+
+    add:
+
+    -------说明
+
+    <img src="./assets/image-20240304212854296.png" alt="image-20240304212854296" style="zoom:50%;" />
+
+2.  更改内容遵循如下格式
+
+    update: 
+
+    --------说明
+
+    <img src="./assets/image-20240304212951721.png" alt="image-20240304212951721" style="zoom:50%;" />
+
+3.  删除内容遵循如下格式
+
+delete:
+
+--------说明
 
 
-#### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 图像插入要求
 
-#### 使用说明
+markdowm的图像插入并不会直接嵌入到文件中，因此在插入图像时，请选择以下的选项
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+<img src="./assets/image-20240314100146610.png" alt="image-20240314100146610" style="zoom: 33%;" />
 
-#### 参与贡献
+选择后，插入图片时会生成以下的文件夹
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+![image-20240314100448333](./assets/image-20240314100448333.png)
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![image-20240314100459846](./assets/image-20240314100459846.png)
