@@ -43,7 +43,7 @@
 
 首先，对于搜索算法来说，想要减少搜索的时间，那就必须要在搜索最优路径时搜索尽量少的点，最好搜索的全部节点恰好就是我们的全局最优路径。但显然，像贪婪优先搜索那样，只考虑当前点到目标点的预期距离的话，往往只能寻找到局部最优。
 
-![贪心的局部最优](assets/贪心的局部最优.png)
+![贪心的局部最优](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/%E8%B4%AA%E5%BF%83%E7%9A%84%E5%B1%80%E9%83%A8%E6%9C%80%E4%BC%98.png)
 
 **换句话说，贪婪优先算法只考虑单一的：当前点到目标点的估计距离，这显然不足以作为全局最优的参考指标。但是它赋予了程序有目的地前往终点方向的能力**
 
@@ -51,7 +51,7 @@
 
 而我们知道，BFS、Dijkstra实质上是对所有节点进行遍历，其中后者是对前者的优化，保证了起点到每一个中间点都是成本最优的选择。
 
-![Dijkstra保障当前点对于起点最优](assets\Dijkstra保障当前点对于起点最优.png)
+![Dijkstra保障当前点对于起点最优](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/Dijkstra%E4%BF%9D%E9%9A%9C%E5%BD%93%E5%89%8D%E7%82%B9%E5%AF%B9%E4%BA%8E%E8%B5%B7%E7%82%B9%E6%9C%80%E4%BC%98.png)
 
 
 
@@ -61,7 +61,7 @@
 
 就可以构建一个新的参考指标：用于保证每一次从当前点选择下一个节点的时候都是全局最优的。
 
-![全局最优理解](assets\全局最优理解.png)
+![全局最优理解](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/%E5%85%A8%E5%B1%80%E6%9C%80%E4%BC%98%E7%90%86%E8%A7%A3.png)
 
 
 
@@ -87,7 +87,7 @@ $$
 
    
 
-   ![曼哈顿距离V2](assets\曼哈顿距离V2.png)
+   ![曼哈顿距离V2](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BBV2.png)
 
    
    $$
@@ -101,7 +101,7 @@ $$
 
    
 
-   ![欧式距离](assets\欧氏距离.png)
+   ![欧式距离](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/%E6%AC%A7%E6%B0%8F%E8%B7%9D%E7%A6%BB.png)
 
    
    $$
@@ -131,7 +131,7 @@ $$
 
 ## 程序流程图
 
-![A-star算法流程](assets\A-star算法流程.png)
+![A-star算法流程](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/A-star%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B.png)
 
 - 地图初始化：设置地图大小、起点终点、障碍物。
 - 遍历待测节点：将起点放入待测列表（open_list）中，进而让A *算法开始运行，计算并存储列表中每一个节点的 "f(n) " 。
@@ -421,29 +421,29 @@ for _ in range(obstacle_cells):
 
 ## 运行结果展示
 
-![image-20240319230213276](assets/image-20240319230213276.png)
+![image-20240319230213276](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/image-20240319230213276.png)
 
-![50x50result](assets\50x50result.png)
+![50x50result](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/50x50result.png)
 
 
 
 ### 在100 x 100地图下运行
 
-![image-20240319230328817](assets/image-20240319230328817.png)
+![image-20240319230328817](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/image-20240319230328817.png)
 
-<img src="assets\100x100result.png" alt="100x100result" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/kashima19960/img/master/A_Star/100x100result.png" alt="100x100result" style="zoom:50%;" />
 
 ### 在150 x 150地图下运行
 
-![image-20240319230339514](assets/image-20240319230339514.png)
+![image-20240319230339514](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/image-20240319230339514.png)
 
-<img src="assets\150x150result.png" alt="150x150result" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/kashima19960/img/master/A_Star/150x150result.png" alt="150x150result" style="zoom:50%;" />
 
 ### 在200 x 200地图下运行
 
-![image-20240319230349324](assets/image-20240319230349324.png)
+![image-20240319230349324](https://raw.githubusercontent.com/kashima19960/img/master/A_Star/image-20240319230349324.png)
 
-<img src="assets\200x200result.png" alt="200x200result" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/kashima19960/img/master/A_Star/200x200result.png" alt="200x200result" style="zoom: 33%;" />
 
 ## 总结与分析
 
